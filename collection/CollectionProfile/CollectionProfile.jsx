@@ -8,7 +8,7 @@ import {
 } from "react-icons/ti";
 
 //INTERNAL IMPORT
-import Style from "./collectionProfile.module.css";
+import Style from "./CollectionProfile.module.css";
 import images from "../../img";
 
 const collectionProfile = () => {

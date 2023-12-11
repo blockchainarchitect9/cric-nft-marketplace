@@ -1,7 +1,7 @@
 import React from "react";
 
 //INTERNAL IMPORT
-import { NFTDescription, NFTDetailsImg, NFTTabs } from "./NFTDetailsIndex";
+import { NFTDescription, NFTDetailsImg, NFTTabs } from "./nftdetailsindex";
 import Style from "./NFTDetailsPage.module.css";
 
 const NFTDetailsPage = ({ nft }) => {

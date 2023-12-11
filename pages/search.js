@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 
 //INTRNAL IMPORT
-import Style from "../styles/searchPage.module.css";
+import Style from "../styles/searchpage.module.css";
 import { Slider, Brand, Loader } from "../components/componentindex";
 import { SearchBar } from "../search/searchindex";
 import { Filter } from "../components/componentindex";
