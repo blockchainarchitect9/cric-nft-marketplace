@@ -24,7 +24,7 @@ import { BiTransferAlt, BiDollar } from "react-icons/bi";
 import Style from "./NFTDescription.module.css";
 import images from "../../img";
 import { Button } from "../../components/componentindex";
-import { NFTTabs } from "../NFTDetailsIndex";
+import { NFTTabs } from "../nftdetailsindex";
 
 //IMPORT SMART CONTRACT
 import { NFTMarketplaceContext } from "../../context/NFTMarketplaceContext";
