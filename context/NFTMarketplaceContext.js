@@ -111,7 +111,12 @@ export const NFTMarketplaceProvider = ({ children }) => {
       const apiSecret = process.env.NEXT_PUBLIC_API_SECRET;
       const ipfsUrl = process.env.NEXT_PUBLIC_IPFS_URL;
 
+      console.log("API Key:", apiKey);
+      console.log("API Secret:", apiSecret);
+      console.log("IPFS URL:", ipfsUrl);
+
       formData.append("file", file);
+      console.log("Form Data:", formData);
       const resFile = await axios({
         method: "post",
         url: ipfsUrl,
@@ -123,12 +128,15 @@ export const NFTMarketplaceProvider = ({ children }) => {
           accept: "application/json",
         },
       });
+      console.log("Response:", resFile);
+      console.log("IPFS Hash:", resFile.data.IpfsHash);
       const url = `https://tan-top-tiglon-899.mypinata.cloud/ipfs/${resFile.data.IpfsHash}?pinataGatewayToken=hiqILyuKXpz4WaOJqzc3vUkq8Zat31UwK6eOKAz2-eL24FoNnjsKtsL8qAS3cnmV&_gl=1*1p0pxn4*_ga*ODE5OTM1Njk4LjE2OTUxODcxNjY.*_ga_5RMPXG14TE*MTcwMTk4MTM1NC44LjEuMTcwMTk4MTkzMy40OS4wLjA.`;
       // const provider = new ethers.providers.Web3Provider(window.ethereum);
       // let contract = connectingWithSmartContract();
       // const signer = contract.connect(provider.getSigner());
       // console.log("Signer", signer);
       // signer.add(currentAccount, url);
+      console.log("URL:", url);
       return url;
     } catch (e) {
       alert(e);
