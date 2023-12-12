@@ -12,7 +12,9 @@ module.exports = {
     hardhat: {},
     sepolia: {
       url: NEXT_PUBLIC_SEPOLIA_RPC,
-      accounts: [`0x${NEXT_PUBLIC_PRIVATE_KEY}`],
+      accounts: [
+        `0x3038e6efb1a52463c6146b0e733ab67a37cbc7f0c06202df31b745993b573547`,
+      ],
     },
   },
 };
