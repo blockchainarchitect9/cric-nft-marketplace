@@ -107,9 +107,10 @@ export const NFTMarketplaceProvider = ({ children }) => {
   const uploadToIPFS = async (file) => {
     try {
       const formData = new FormData();
-      const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-      const apiSecret = process.env.NEXT_PUBLIC_API_SECRET;
-      const ipfsUrl = process.env.NEXT_PUBLIC_IPFS_URL;
+      const apiKey = "8094e1e59bd84325eb26";
+      const apiSecret =
+        "67a79430f3e5d233dc060fc0e6a5420493f0b2638d94f43206a39323e6d887b3";
+      const ipfsUrl = "https://api.pinata.cloud/pinning/pinFileToIPFS";
 
       console.log("API Key:", apiKey);
       console.log("API Secret:", apiSecret);
